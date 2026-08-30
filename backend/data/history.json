@@ -1,0 +1,167 @@
+[
+    {
+        "id": 15,
+        "timestamp": "2026-08-30T10:11:07.788111+00:00",
+        "message": "good weather today",
+        "classification": "NORMAL COMMUNICATION",
+        "detected": false,
+        "confidence": 0.898,
+        "suspicious_probability": 0.102,
+        "risk_level": "LOW",
+        "recommendation": "No immediate suspicious indicators detected."
+    },
+    {
+        "id": 14,
+        "timestamp": "2026-08-25T08:26:17.362343+00:00",
+        "message": "remember every second word when the lights change after midnight.",
+        "classification": "SUSPICIOUS COMMUNICATION",
+        "detected": true,
+        "confidence": 0.599,
+        "suspicious_probability": 0.401,
+        "risk_level": "MEDIUM",
+        "recommendation": "Potential suspicious indicators detected. Monitor communication and perform additional analysis."
+    },
+    {
+        "id": 13,
+        "timestamp": "2026-08-23T09:04:09.365747+00:00",
+        "message": "The logistics team has completed the inventory check. All required equipment is available and the next supply delivery is scheduled for Monday morning.",
+        "classification": "SUSPICIOUS COMMUNICATION",
+        "detected": true,
+        "confidence": 0.559,
+        "suspicious_probability": 0.441,
+        "risk_level": "MEDIUM",
+        "recommendation": "Potential suspicious indicators detected. Monitor communication and perform additional analysis."
+    },
+    {
+        "id": 12,
+        "timestamp": "2026-08-23T07:58:04.412162+00:00",
+        "message": "Remember every second word when the lights change after midnight.",
+        "classification": "SUSPICIOUS COMMUNICATION",
+        "detected": true,
+        "confidence": 0.598,
+        "suspicious_probability": 0.402,
+        "risk_level": "MEDIUM",
+        "recommendation": "Potential suspicious indicators detected. Monitor communication and perform additional analysis."
+    },
+    {
+        "id": 11,
+        "timestamp": "2026-08-23T07:56:07.031688+00:00",
+        "message": "Remember every second word when the lights change after midnight.",
+        "classification": "SUSPICIOUS COMMUNICATION",
+        "detected": true,
+        "confidence": 0.598,
+        "suspicious_probability": 0.402,
+        "risk_level": "MEDIUM",
+        "recommendation": "Potential suspicious indicators detected. Monitor communication and perform additional analysis."
+    },
+    {
+        "id": 10,
+        "timestamp": "2026-08-23T07:53:48.067156+00:00",
+        "message": "Remember every second word when the lights change after midnight.",
+        "classification": "SUSPICIOUS COMMUNICATION",
+        "detected": true,
+        "confidence": 0.598,
+        "suspicious_probability": 0.402,
+        "risk_level": "MEDIUM",
+        "recommendation": "Potential suspicious indicators detected. Monitor communication and perform additional analysis."
+    },
+    {
+        "id": 9,
+        "timestamp": "2026-08-23T07:41:00.802935+00:00",
+        "message": "The blue bird will visit the old bridge at 0317.",
+        "classification": "SUSPICIOUS COMMUNICATION",
+        "detected": true,
+        "confidence": 0.603,
+        "suspicious_probability": 0.397,
+        "risk_level": "MEDIUM",
+        "recommendation": "Potential suspicious indicators detected. Monitor communication and perform additional analysis."
+    },
+    {
+        "id": 8,
+        "timestamp": "2026-08-23T07:29:24.599342+00:00",
+        "message": "The blue bird will visit the old bridge at 0317.",
+        "classification": "SUSPICIOUS COMMUNICATION",
+        "detected": true,
+        "confidence": 0.603,
+        "suspicious_probability": 0.397,
+        "risk_level": "MEDIUM",
+        "recommendation": "Potential suspicious indicators detected. Monitor communication and perform additional analysis."
+    },
+    {
+        "id": 7,
+        "timestamp": "2026-08-23T07:10:16.051877+00:00",
+        "message": "The blue vehicle will stop near the old bridge at 03:17. Use the third word from each sentence.",
+        "classification": "SUSPICIOUS COMMUNICATION",
+        "detected": true,
+        "confidence": 0.706,
+        "suspicious_probability": 0.706,
+        "risk_level": "HIGH",
+        "recommendation": "Multiple suspicious indicators detected. Further analyst review recommended."
+    },
+    {
+        "id": 6,
+        "timestamp": "2026-08-23T07:07:59.462731+00:00",
+        "message": "The blue vehicle will stop near the old bridge at 03:17. Use the third word from each sentence.",
+        "classification": "SUSPICIOUS COMMUNICATION",
+        "detected": true,
+        "confidence": 0.706,
+        "suspicious_probability": 0.706,
+        "risk_level": "HIGH",
+        "recommendation": "Multiple suspicious indicators detected. Further analyst review recommended."
+    },
+    {
+        "id": 5,
+        "timestamp": "2026-08-23T07:07:30.710292+00:00",
+        "message": "The patrol team will arrive at the training center tomorrow morning.",
+        "classification": "NORMAL COMMUNICATION",
+        "detected": false,
+        "confidence": 0.963,
+        "suspicious_probability": 0.037,
+        "risk_level": "LOW",
+        "recommendation": "No immediate suspicious indicators detected."
+    },
+    {
+        "id": 4,
+        "timestamp": "2026-08-23T07:04:21.229960+00:00",
+        "message": "Tomorrow the blue birds will visit the old bridge at exactly 03:17. Remember the third word from every sentence.\"",
+        "classification": "SUSPICIOUS COMMUNICATION",
+        "detected": true,
+        "confidence": 0.741,
+        "suspicious_probability": 0.741,
+        "risk_level": "HIGH",
+        "recommendation": "Multiple suspicious indicators detected. Further analyst review recommended."
+    },
+    {
+        "id": 3,
+        "timestamp": "2026-08-23T07:01:27.851822+00:00",
+        "message": "Tomorrow the blue birds will visit the old bridge at exactly 03:17. Remember the third word from every sentence.",
+        "classification": "SUSPICIOUS COMMUNICATION",
+        "detected": true,
+        "confidence": 0.732,
+        "suspicious_probability": 0.732,
+        "risk_level": "HIGH",
+        "recommendation": "Multiple suspicious indicators detected. Further analyst review recommended."
+    },
+    {
+        "id": 2,
+        "timestamp": "2026-08-23T07:00:54.256085+00:00",
+        "message": "The team will meet at the training center tomorrow.",
+        "classification": "NORMAL COMMUNICATION",
+        "detected": false,
+        "confidence": 0.987,
+        "suspicious_probability": 0.013,
+        "risk_level": "LOW",
+        "recommendation": "No immediate suspicious indicators detected."
+    },
+    {
+        "id": 1,
+        "timestamp": "2026-08-22T10:22:12.245186+00:00",
+        "message": "The team will meet at the training center tomorrow.",
+        "classification": "NORMAL COMMUNICATION",
+        "detected": false,
+        "confidence": 1.0,
+        "suspicious_probability": 0.0,
+        "risk_level": "LOW",
+        "recommendation": "No immediate suspicious indicators detected."
+    }
+]

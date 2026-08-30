@@ -1,0 +1,9 @@
+{
+    "messages_scanned": 17,
+    "signals_detected": 11,
+    "high_risk": 4,
+    "medium_risk": 7,
+    "low_risk": 6,
+    "critical_risk": 0,
+    "total_confidence": 12.891
+}
