@@ -1,23 +1,24 @@
 # AI Hidden-Signal Communication
 
 <p align="center">
+  <img src="docs/images/project-banner.png" alt="AI Hidden-Signal Communication" width="900">
+</p>
 
-<img src="docs/images/project-banner.png" alt="AI Hidden-Signal Communication" width="900">
+<h3 align="center">
+AI-Powered Communication Intelligence & Suspicious Pattern Detection
+</h3>
 
+<p align="center">
+  <b>Secure. Intelligent. Explainable.</b>
 </p>
 
 <p align="center">
-<b>AI-powered communication intelligence and suspicious-pattern detection platform</b>
-</p>
 
-<p align="center">
-
-![Python](https://img.shields.io/badge/Python-3.x-blue)
-![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green)
-![React](https://img.shields.io/badge/React-Frontend-61DAFB)
-![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Scikit--learn-orange)
-![Computer Vision](https://img.shields.io/badge/Computer%20Vision-OpenCV-red)
-![Authentication](https://img.shields.io/badge/Authentication-MFA-purple)
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.141-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![React](https://img.shields.io/badge/React-Vite-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Scikit Learn](https://img.shields.io/badge/ML-Scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
+![OpenCV](https://img.shields.io/badge/CV-OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
 
 </p>
 
@@ -25,116 +26,244 @@
 
 ## Overview
 
-AI Hidden-Signal Communication is an AI-powered communication intelligence platform designed to analyze text messages and identify suspicious or unusual communication patterns.
+**AI Hidden-Signal Communication** is an AI-powered communication intelligence platform designed to analyze text-based communication and identify potentially suspicious or unusual patterns.
 
-The system combines machine learning, statistical feature analysis, entropy-based analysis, hidden-signal indicators, and multi-factor authentication to provide a secure environment for authorized users.
+The system combines machine learning, statistical analysis, entropy-based feature extraction, hidden-signal analysis, and multi-factor authentication to provide a controlled environment for authorized users.
 
-The platform provides a web-based dashboard where authorized personnel can analyze communication, review detection results, monitor statistics, and inspect historical detections.
+The platform provides a centralized web dashboard for:
 
----
-
-## Problem Statement
-
-Conventional communication monitoring systems may rely heavily on manually defined rules or keyword matching.
-
-However, suspicious communication can also exhibit statistical and structural characteristics that are difficult to identify through simple keyword searches.
-
-This project explores an AI-based approach that analyzes communication characteristics such as:
-
-- Character entropy
-- Message length
-- Word frequency
-- Digit distribution
-- Special characters
-- Uppercase and lowercase distribution
-- Repetition patterns
-- Structural characteristics
-- Encoded-pattern indicators
-- Signal markers
-
-The system combines these characteristics with machine-learning predictions to produce an overall suspicious probability.
+- Communication analysis
+- Suspicious-pattern detection
+- AI probability scoring
+- Risk assessment
+- Detection history
+- Analytics
+- Secure authentication
+- Face verification
 
 ---
 
-## Proposed Solution
+## Why This Project?
 
-The proposed system provides an integrated platform consisting of:
+Traditional rule-based systems often depend on predefined keywords or patterns.
 
-1. Secure authentication
-2. Password verification
-3. Face verification
-4. AI-based message analysis
-5. Hidden-signal feature extraction
-6. Machine-learning classification
-7. Suspicious probability estimation
-8. Risk-level assessment
-9. Detection history
-10. Analytics dashboard
+Suspicious communication, however, may not always contain obvious keywords. It can exhibit unusual statistical, structural, or encoding characteristics.
 
-The architecture is designed to provide an additional layer of intelligence for authorized communication-analysis environments.
-
----
-
-# System Architecture
+This project explores an AI-driven approach that analyzes multiple characteristics of communication and combines them to identify potentially suspicious messages.
 
 ```text
-                         USER
-                           |
-                           v
-                 +-------------------+
-                 |    Login Page     |
-                 +---------+---------+
-                           |
-                           v
-              +------------------------+
-              | Username + Password    |
-              +-----------+------------+
-                          |
-                          v
-              +------------------------+
-              | Face Verification      |
-              +-----------+------------+
-                          |
-                    Authentication
-                          |
-                          v
-              +------------------------+
-              |    React Dashboard     |
-              +-----------+------------+
-                          |
-             +------------+-------------+
-             |            |             |
-             v            v             v
-       Message       Detection      Analytics
-       Analysis       History
-             |            |             |
-             +------------+-------------+
-                          |
-                          v
-              +------------------------+
-              |      FastAPI API       |
-              +-----------+------------+
-                          |
-          +---------------+----------------+
-          |               |                |
-          v               v                v
- +----------------+ +------------+ +----------------+
- | Feature        | | ML Model   | | Hidden Signal  |
- | Extraction     | | Prediction | | Analysis       |
- +-------+--------+ +-----+------+ +-------+--------+
-         |                |                |
-         +----------------+----------------+
-                          |
-                          v
-               +-----------------------+
-               | Combined AI Analysis  |
-               +-----------+-----------+
-                           |
-                           v
-               +-----------------------+
-               | Detection Result      |
-               | Classification        |
-               | Probability           |
-               | Risk Level             |
-               | Indicators             |
-               +-----------------------+
+Traditional Approach
+        |
+        v
+Keyword / Rule Matching
+        |
+        v
+Limited Detection
+
+             vs.
+
+AI-Based Approach
+        |
+        v
+Feature Extraction
+        |
+        +---- Entropy
+        +---- Structure
+        +---- Character Patterns
+        +---- Statistical Features
+        +---- ML Prediction
+        |
+        v
+Combined Analysis
+        |
+        v
+Risk Assessment
+
+#System Architecture
+
+                         ┌─────────────────────┐
+                         │        USER         │
+                         └──────────┬──────────┘
+                                    │
+                                    ▼
+                         ┌─────────────────────┐
+                         │     LOGIN PAGE      │
+                         └──────────┬──────────┘
+                                    │
+                                    ▼
+                         ┌─────────────────────┐
+                         │ Password Validation │
+                         └──────────┬──────────┘
+                                    │
+                                    ▼
+                         ┌─────────────────────┐
+                         │  Face Verification  │
+                         └──────────┬──────────┘
+                                    │
+                              AUTHORIZED
+                                    │
+                                    ▼
+                    ┌──────────────────────────────┐
+                    │       REACT DASHBOARD        │
+                    └──────────────┬───────────────┘
+                                   │
+              ┌────────────────────┼────────────────────┐
+              │                    │                    │
+              ▼                    ▼                    ▼
+       ┌─────────────┐      ┌─────────────┐      ┌─────────────┐
+       │  Detection  │      │  Analytics  │      │  Settings   │
+       └──────┬──────┘      └─────────────┘      └─────────────┘
+              │
+              ▼
+       ┌─────────────────────────────────────┐
+       │             FASTAPI                 │
+       │              BACKEND                │
+       └──────────────────┬──────────────────┘
+                          │
+             ┌────────────┼────────────┐
+             │            │            │
+             ▼            ▼            ▼
+      ┌────────────┐ ┌──────────┐ ┌──────────────┐
+      │  Feature   │ │ ML Model │ │ Hidden Signal│
+      │ Extraction │ │          │ │   Analysis   │
+      └─────┬──────┘ └────┬─────┘ └──────┬───────┘
+            │             │              │
+            └─────────────┼──────────────┘
+                          │
+                          ▼
+                 ┌──────────────────┐
+                 │ Combined AI Score│
+                 └────────┬─────────┘
+                          │
+                          ▼
+                 ┌──────────────────┐
+                 │ Detection Result │
+                 ├──────────────────┤
+                 │ Classification   │
+                 │ Probability      │
+                 │ Risk Level       │
+                 │ Indicators       │
+                 └──────────────────┘
+
+User Interface
+Secure Login
+
+The application starts with a protected authentication interface.
+
+<p align="center"> <img src="docs/images/login-page.png" alt="Secure Login" width="850"> </p>
+
+The authentication layer is designed to prevent unauthorized access to the communication-analysis dashboard.
+
+Face Verification
+
+A second authentication layer verifies the authorized user's face.
+
+<p align="center"> <img src="docs/images/face-verification.png" alt="Face Verification" width="850"> </p>
+
+The system captures a camera frame and compares it with the enrolled authorized face.
+
+Main Dashboard
+
+The dashboard provides a centralized view of the communication-analysis system.
+
+<p align="center"> <img src="docs/images/dashboard.png" alt="Main Dashboard" width="900"> </p>
+
+The dashboard provides access to:
+
+Message analysis
+Detection results
+Suspicious probability
+Risk assessment
+Detection history
+Analytics
+System status
+Detection Result
+<p align="center"> <img src="docs/images/detection-result.png" alt="Detection Result" width="900"> </p>
+
+The result interface presents the AI analysis in an easy-to-understand format.
+
+Detection History
+<p align="center"> <img src="docs/images/detection-history.png" alt="Detection History" width="900"> </p>
+
+The history module allows authorized users to review previously analyzed communication.
+
+Analytics
+<p align="center"> <img src="docs/images/analytics.png" alt="Analytics Dashboard" width="900"> </p>
+
+The analytics section provides an overview of system activity and detection statistics.
+
+Settings
+<p align="center"> <img src="docs/images/settings.png" alt="Settings" width="900"> </p>
+
+The settings module provides a centralized interface for system configuration and future administrative controls.
+
+Authentication
+
+The system implements a multi-factor authentication workflow.
+
+                    LOGIN
+                      │
+                      ▼
+              Username + Password
+                      │
+                      ▼
+              Credential Validation
+                      │
+                      ▼
+               Face Verification
+                      │
+                 ┌────┴────┐
+                 │         │
+               FAIL       PASS
+                 │         │
+                 ▼         ▼
+             DENIED     DASHBOARD
+
+Protected application routes include:
+
+/dashboard
+/analytics
+/settings
+Role-Based Access
+
+The authentication architecture can support controlled roles such as:
+
+Administrator
+
+Designed for authorized administrative operations.
+
+Potential capabilities:
+
+System configuration
+User management
+Face enrollment
+Security configuration
+Detection monitoring
+Supervisor
+
+Designed for authorized monitoring and analysis.
+
+Potential capabilities:
+
+Communication analysis
+Detection history
+Analytics
+Monitoring
+Report review
+
+Role permissions can be expanded as the project develops.
+
+Project Focus
+Artificial Intelligence
+Machine Learning
+Natural Language Processing
+Anomaly Detection
+Statistical Analysis
+Computer Vision
+Cybersecurity
+Secure Authentication
+Data Visualization
+Web Application Development
+Author
+
+Developed as an academic and competition-oriented project exploring the application of artificial intelligence, machine learning, computer vision, and secure authentication to communication intelligence.
