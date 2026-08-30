@@ -1,125 +1,140 @@
-# AI_Hidden_Signal_Communication_project
-AI-powered secure communication intelligence system that detects suspicious and hidden-signal patterns in messages using machine learning, entropy analysis, and multi-factor authentication with password and face verification.
-Overview
+# AI Hidden-Signal Communication
 
-AI Hidden-Signal Communication is a security-focused intelligence system that analyzes text-based communication and identifies messages that may contain suspicious or unusual communication patterns.
+<p align="center">
 
-The system combines:
+<img src="docs/images/project-banner.png" alt="AI Hidden-Signal Communication" width="900">
 
-Machine Learning
-Hidden-signal analysis
-Statistical feature analysis
-Entropy-based detection
-Password authentication
-Face verification
-Detection history
-Analytics dashboard
+</p>
 
-The project is designed as a prototype for controlled and authorized security and intelligence environments.
+<p align="center">
+<b>AI-powered communication intelligence and suspicious-pattern detection platform</b>
+</p>
 
-Objectives
+<p align="center">
 
-The main objectives of the project are:
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green)
+![React](https://img.shields.io/badge/React-Frontend-61DAFB)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Scikit--learn-orange)
+![Computer Vision](https://img.shields.io/badge/Computer%20Vision-OpenCV-red)
+![Authentication](https://img.shields.io/badge/Authentication-MFA-purple)
 
-Detect suspicious communication automatically.
-Identify unusual patterns in text messages.
-Calculate suspicious probability using AI/ML models.
-Analyze statistical characteristics of messages.
-Provide risk-level classification.
-Restrict access to authorized personnel.
-Use face verification as an additional authentication layer.
-Provide a dashboard for monitoring and analysis.
-Key Features
-AI-Based Detection
+</p>
 
-The system analyzes communication using machine-learning-based classification and feature analysis.
+---
 
-Messages can be classified as:
+## Overview
 
-NORMAL COMMUNICATION
-SUSPICIOUS COMMUNICATION
+AI Hidden-Signal Communication is an AI-powered communication intelligence platform designed to analyze text messages and identify suspicious or unusual communication patterns.
 
-The system also generates a suspicious probability score.
+The system combines machine learning, statistical feature analysis, entropy-based analysis, hidden-signal indicators, and multi-factor authentication to provide a secure environment for authorized users.
 
-Hidden-Signal Analysis
+The platform provides a web-based dashboard where authorized personnel can analyze communication, review detection results, monitor statistics, and inspect historical detections.
 
-The analysis engine examines features such as:
+---
 
-Character entropy
-Message length
-Word count
-Digit count
-Special characters
-Uppercase/lowercase distribution
-Digit ratio
-Special-character ratio
-Encoded patterns
-Signal markers
-Repetition patterns
-Message structure
-Risk Assessment
+## Problem Statement
 
-Based on the analysis, the system provides a risk classification:
+Conventional communication monitoring systems may rely heavily on manually defined rules or keyword matching.
 
-LOW
-MEDIUM
-HIGH
+However, suspicious communication can also exhibit statistical and structural characteristics that are difficult to identify through simple keyword searches.
 
-It also provides recommendations when suspicious indicators are detected.
+This project explores an AI-based approach that analyzes communication characteristics such as:
 
-Multi-Factor Authentication
+- Character entropy
+- Message length
+- Word frequency
+- Digit distribution
+- Special characters
+- Uppercase and lowercase distribution
+- Repetition patterns
+- Structural characteristics
+- Encoded-pattern indicators
+- Signal markers
 
-The system uses multiple authentication layers for restricted access:
+The system combines these characteristics with machine-learning predictions to produce an overall suspicious probability.
 
-Username/password authentication
-Face verification
+---
 
-Only authorized users can access protected system features.
+## Proposed Solution
 
-Face Verification
+The proposed system provides an integrated platform consisting of:
 
-The authentication system supports face enrollment and verification using the system camera.
+1. Secure authentication
+2. Password verification
+3. Face verification
+4. AI-based message analysis
+5. Hidden-signal feature extraction
+6. Machine-learning classification
+7. Suspicious probability estimation
+8. Risk-level assessment
+9. Detection history
+10. Analytics dashboard
 
-The face verification process calculates a similarity score before granting access.
+The architecture is designed to provide an additional layer of intelligence for authorized communication-analysis environments.
 
-Dashboard
+---
 
-The dashboard provides an interface for:
+# System Architecture
 
-Message analysis
-Detection results
-Suspicious probability
-Risk level
-Detection indicators
-System status
-Detection History
-
-Analyzed messages can be stored and retrieved through the backend.
-
-The history section allows authorized users to review previous detection results.
-
-Analytics
-
-The analytics section provides information about:
-
-Normal communications
-Suspicious communications
-Detection statistics
-Risk distribution
-AI analysis results
-
-AI Hidden-Signal Communication
-
-Core areas:
-
-Artificial Intelligence
-Machine Learning
-Cybersecurity
-Computer Vision
-Secure Authentication
-Natural Language Processing
-Anomaly Detection
-Data Analysis
-Acknowledgement
-
-This project was developed as part of an academic and competition-oriented exploration of AI applications in secure communication and national-security-related technology.
+```text
+                         USER
+                           |
+                           v
+                 +-------------------+
+                 |    Login Page     |
+                 +---------+---------+
+                           |
+                           v
+              +------------------------+
+              | Username + Password    |
+              +-----------+------------+
+                          |
+                          v
+              +------------------------+
+              | Face Verification      |
+              +-----------+------------+
+                          |
+                    Authentication
+                          |
+                          v
+              +------------------------+
+              |    React Dashboard     |
+              +-----------+------------+
+                          |
+             +------------+-------------+
+             |            |             |
+             v            v             v
+       Message       Detection      Analytics
+       Analysis       History
+             |            |             |
+             +------------+-------------+
+                          |
+                          v
+              +------------------------+
+              |      FastAPI API       |
+              +-----------+------------+
+                          |
+          +---------------+----------------+
+          |               |                |
+          v               v                v
+ +----------------+ +------------+ +----------------+
+ | Feature        | | ML Model   | | Hidden Signal  |
+ | Extraction     | | Prediction | | Analysis       |
+ +-------+--------+ +-----+------+ +-------+--------+
+         |                |                |
+         +----------------+----------------+
+                          |
+                          v
+               +-----------------------+
+               | Combined AI Analysis  |
+               +-----------+-----------+
+                           |
+                           v
+               +-----------------------+
+               | Detection Result      |
+               | Classification        |
+               | Probability           |
+               | Risk Level             |
+               | Indicators             |
+               +-----------------------+
