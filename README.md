@@ -1,34 +1,14 @@
 # AI Hidden-Signal Communication
 
-<p align="center">
-  <img src="docs/images/project-banner.png" alt="AI Hidden-Signal Communication" width="900">
-</p>
-
-<h3 align="center">
-AI-Powered Communication Intelligence & Suspicious Pattern Detection
-</h3>
-
-<p align="center">
-  <b>Secure. Intelligent. Explainable.</b>
-</p>
-
-<p align="center">
-
-![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-0.141-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![React](https://img.shields.io/badge/React-Vite-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![Scikit Learn](https://img.shields.io/badge/ML-Scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
-![OpenCV](https://img.shields.io/badge/CV-OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
-
-</p>
+AI-powered communication intelligence and suspicious-pattern detection platform designed to analyze text communication using machine learning, statistical analysis, hidden-signal analysis, and secure multi-factor authentication.
 
 ---
 
 ## Overview
 
-**AI Hidden-Signal Communication** is an AI-powered communication intelligence platform designed to analyze text-based communication and identify potentially suspicious or unusual patterns.
+AI Hidden-Signal Communication is a security-focused AI platform that analyzes text-based communication and identifies potentially suspicious or unusual communication patterns.
 
-The system combines machine learning, statistical analysis, entropy-based feature extraction, hidden-signal analysis, and multi-factor authentication to provide a controlled environment for authorized users.
+The system combines machine learning, statistical feature analysis, entropy-based analysis, hidden-signal indicators, password authentication, and face verification to provide a controlled environment for authorized users.
 
 The platform provides a centralized web dashboard for:
 
@@ -43,227 +23,190 @@ The platform provides a centralized web dashboard for:
 
 ---
 
-## Why This Project?
+## Objectives
 
-Traditional rule-based systems often depend on predefined keywords or patterns.
+The primary objectives of the project are:
 
-Suspicious communication, however, may not always contain obvious keywords. It can exhibit unusual statistical, structural, or encoding characteristics.
+1. Detect potentially suspicious communication using AI and machine learning.
+2. Identify unusual statistical and structural patterns in messages.
+3. Extract meaningful features from communication.
+4. Generate suspicious probability and confidence scores.
+5. Classify communication as normal or suspicious.
+6. Assign an appropriate risk level.
+7. Restrict system access to authorized users.
+8. Provide an additional face-verification authentication layer.
+9. Maintain detection history for authorized review.
+10. Provide an interactive analytics dashboard.
 
-This project explores an AI-driven approach that analyzes multiple characteristics of communication and combines them to identify potentially suspicious messages.
+---
 
-```text
-Traditional Approach
-        |
-        v
-Keyword / Rule Matching
-        |
-        v
-Limited Detection
+## Problem Statement
 
-             vs.
+Traditional communication monitoring systems often depend on predefined rules, keywords, or manually configured patterns.
 
-AI-Based Approach
-        |
-        v
-Feature Extraction
-        |
-        +---- Entropy
-        +---- Structure
-        +---- Character Patterns
-        +---- Statistical Features
-        +---- ML Prediction
-        |
-        v
-Combined Analysis
-        |
-        v
-Risk Assessment
+Suspicious communication may not always contain obvious keywords. It can also demonstrate unusual characteristics in its structure, character distribution, entropy, repetition, or numerical patterns.
 
-#System Architecture
+This project explores an AI-based approach that analyzes multiple communication characteristics and combines machine-learning predictions with statistical and hidden-signal analysis.
 
-                         ┌─────────────────────┐
-                         │        USER         │
-                         └──────────┬──────────┘
-                                    │
-                                    ▼
-                         ┌─────────────────────┐
-                         │     LOGIN PAGE      │
-                         └──────────┬──────────┘
-                                    │
-                                    ▼
-                         ┌─────────────────────┐
-                         │ Password Validation │
-                         └──────────┬──────────┘
-                                    │
-                                    ▼
-                         ┌─────────────────────┐
-                         │  Face Verification  │
-                         └──────────┬──────────┘
-                                    │
-                              AUTHORIZED
-                                    │
-                                    ▼
-                    ┌──────────────────────────────┐
-                    │       REACT DASHBOARD        │
-                    └──────────────┬───────────────┘
-                                   │
-              ┌────────────────────┼────────────────────┐
-              │                    │                    │
-              ▼                    ▼                    ▼
-       ┌─────────────┐      ┌─────────────┐      ┌─────────────┐
-       │  Detection  │      │  Analytics  │      │  Settings   │
-       └──────┬──────┘      └─────────────┘      └─────────────┘
-              │
-              ▼
-       ┌─────────────────────────────────────┐
-       │             FASTAPI                 │
-       │              BACKEND                │
-       └──────────────────┬──────────────────┘
-                          │
-             ┌────────────┼────────────┐
-             │            │            │
-             ▼            ▼            ▼
-      ┌────────────┐ ┌──────────┐ ┌──────────────┐
-      │  Feature   │ │ ML Model │ │ Hidden Signal│
-      │ Extraction │ │          │ │   Analysis   │
-      └─────┬──────┘ └────┬─────┘ └──────┬───────┘
-            │             │              │
-            └─────────────┼──────────────┘
-                          │
-                          ▼
-                 ┌──────────────────┐
-                 │ Combined AI Score│
-                 └────────┬─────────┘
-                          │
-                          ▼
-                 ┌──────────────────┐
-                 │ Detection Result │
-                 ├──────────────────┤
-                 │ Classification   │
-                 │ Probability      │
-                 │ Risk Level       │
-                 │ Indicators       │
-                 └──────────────────┘
+---
 
-User Interface
-Secure Login
+## Proposed Solution
 
-The application starts with a protected authentication interface.
+The proposed system consists of several integrated components:
 
-<p align="center"> <img src="docs/images/login-page.png" alt="Secure Login" width="850"> </p>
+- Secure authentication
+- Password verification
+- Face verification
+- Feature extraction
+- Machine-learning classification
+- Entropy analysis
+- Hidden-signal analysis
+- Suspicious probability calculation
+- Risk assessment
+- Detection history
+- Analytics dashboard
 
-The authentication layer is designed to prevent unauthorized access to the communication-analysis dashboard.
+The system is designed as an AI-assisted detection platform for authorized and controlled environments.
 
-Face Verification
+---
 
-A second authentication layer verifies the authorized user's face.
+## Core Features
 
-<p align="center"> <img src="docs/images/face-verification.png" alt="Face Verification" width="850"> </p>
+### 1. AI-Based Communication Detection
 
-The system captures a camera frame and compares it with the enrolled authorized face.
+The system classifies messages into:
 
-Main Dashboard
+- `NORMAL COMMUNICATION`
+- `SUSPICIOUS COMMUNICATION`
 
-The dashboard provides a centralized view of the communication-analysis system.
+It also generates a suspicious probability and confidence score.
 
-<p align="center"> <img src="docs/images/dashboard.png" alt="Main Dashboard" width="900"> </p>
+### 2. Feature Extraction
 
-The dashboard provides access to:
+The system extracts multiple characteristics from a message, including:
 
-Message analysis
-Detection results
-Suspicious probability
-Risk assessment
-Detection history
-Analytics
-System status
-Detection Result
-<p align="center"> <img src="docs/images/detection-result.png" alt="Detection Result" width="900"> </p>
+- Message length
+- Word count
+- Digit count
+- Special character count
+- Uppercase count
+- Lowercase count
+- Space count
+- Character entropy
+- Digit ratio
+- Special-character ratio
+- Uppercase ratio
+- Encoded-pattern indicators
+- Signal markers
 
-The result interface presents the AI analysis in an easy-to-understand format.
+### 3. Hidden-Signal Analysis
 
-Detection History
-<p align="center"> <img src="docs/images/detection-history.png" alt="Detection History" width="900"> </p>
+The hidden-signal analysis engine examines additional characteristics such as:
 
-The history module allows authorized users to review previously analyzed communication.
+- Entropy
+- Keyword indicators
+- Repetition score
+- Structure score
+- Character count
+- Word count
 
-Analytics
-<p align="center"> <img src="docs/images/analytics.png" alt="Analytics Dashboard" width="900"> </p>
+### 4. Machine-Learning Prediction
+
+The extracted features are passed to a trained machine-learning model to classify communication.
+
+The model produces:
+
+- Prediction
+- Classification
+- Suspicious probability
+
+### 5. Combined AI Analysis
+
+The outputs from different detection components are combined to produce an overall suspicious probability.
+
+### 6. Risk Assessment
+
+The system provides risk classifications such as:
+
+- `LOW`
+- `MEDIUM`
+- `HIGH`
+
+### 7. Multi-Factor Authentication
+
+The platform uses multiple authentication layers:
+
+1. Username and password authentication
+2. Face verification
+
+### 8. Face Verification
+
+Authorized users can enroll their face and subsequently use face verification as an additional authentication factor.
+
+### 9. Detection History
+
+Authorized users can review previously analyzed communication and their corresponding detection results.
+
+### 10. Analytics Dashboard
 
 The analytics section provides an overview of system activity and detection statistics.
 
-Settings
-<p align="center"> <img src="docs/images/settings.png" alt="Settings" width="900"> </p>
+---
 
-The settings module provides a centralized interface for system configuration and future administrative controls.
+## System Architecture
 
-Authentication
-
-The system implements a multi-factor authentication workflow.
-
-                    LOGIN
-                      │
-                      ▼
-              Username + Password
-                      │
-                      ▼
-              Credential Validation
-                      │
-                      ▼
-               Face Verification
-                      │
-                 ┌────┴────┐
-                 │         │
-               FAIL       PASS
-                 │         │
-                 ▼         ▼
-             DENIED     DASHBOARD
-
-Protected application routes include:
-
-/dashboard
-/analytics
-/settings
-Role-Based Access
-
-The authentication architecture can support controlled roles such as:
-
-Administrator
-
-Designed for authorized administrative operations.
-
-Potential capabilities:
-
-System configuration
-User management
-Face enrollment
-Security configuration
-Detection monitoring
-Supervisor
-
-Designed for authorized monitoring and analysis.
-
-Potential capabilities:
-
-Communication analysis
-Detection history
-Analytics
-Monitoring
-Report review
-
-Role permissions can be expanded as the project develops.
-
-Project Focus
-Artificial Intelligence
-Machine Learning
-Natural Language Processing
-Anomaly Detection
-Statistical Analysis
-Computer Vision
-Cybersecurity
-Secure Authentication
-Data Visualization
-Web Application Development
-Author
-
-Developed as an academic and competition-oriented project exploring the application of artificial intelligence, machine learning, computer vision, and secure authentication to communication intelligence.
+```text
+                         USER
+                           |
+                           v
+                  +----------------+
+                  |   Login Page   |
+                  +-------+--------+
+                          |
+                          v
+                +--------------------+
+                | Username + Password|
+                +---------+----------+
+                          |
+                          v
+                +--------------------+
+                | Face Verification  |
+                +---------+----------+
+                          |
+                    AUTHENTICATED
+                          |
+                          v
+                +--------------------+
+                |  React Dashboard   |
+                +---------+----------+
+                          |
+             +------------+------------+
+             |            |            |
+             v            v            v
+        Detection     Analytics     Settings
+             |
+             v
+       +----------------+
+       |    FastAPI     |
+       |    Backend     |
+       +-------+--------+
+               |
+       +-------+--------+
+       |       |        |
+       v       v        v
+   Feature    ML     Hidden-Signal
+  Extraction Model     Analysis
+       |       |        |
+       +-------+--------+
+               |
+               v
+       Combined AI Analysis
+               |
+               v
+       Suspicious Probability
+               |
+               v
+        Risk Classification
+               |
+               v
+        Final Detection
